@@ -1,0 +1,262 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Kevin Pirabaharan</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <!-- Particle background Effect -->
+    <link rel="stylesheet" href="assets/css/particleEffects.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Font Awesome JS -->
+    <link href="assets/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h2>Kevin
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                </h2>
+                <h2> Pirabaharan</h2>
+            </div>
+
+            <div class="sidebar-links">
+                <a href="https://github.com/KevinPirabaharan"> <h4 style="margin-bottom: 16px">Github
+                    <i class="fab fa-github fa-lg" ></i>
+                </h4>
+                </a>
+
+                <a href="https://www.linkedin.com/in/kevinpirabaharan/"> <h4>Linkedin
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </h4>
+                </a>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#aboutMe">About Me</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio">Projects</a>
+                </li>
+                <li>
+                    <a href="mailto:inquiries@kpirabaharan.com?Subject=Inquiries" target="_top">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="src/kevinpirabaharan-Resume.pdf" class="download">Download My Resume</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+    </div>
+
+    <div id="content">
+        <section id="aboutMe" style="margin-bottom: 15px">
+            <h2 align="center">About Me</h2>
+            <div class="Bio" aligh="right">
+            <img src="assets/img/BioPic.jpg" float=none align=left style="margin-right: 18px; margin-top: 10px; margin-bottom: 10px" width=280px height=330px>
+            <p > I am currently in my 4th year of Software Engineering with a minor in Marketing Management at the University of Guelph. I am very passionate about technology, security, innovation and sharing this knowledge with others. Planning and
+                leading programming workshops for the Centre for Business and Student Enterprise (CBASE). <br /> <br /> Throughout my experience as a developer, I have designed various programs including: a credit card validator, iCal parser, android ToDo app, autonomous car simulator, and a digital signage system. I have published some of my
+            noteworthy applicatons to demonstrate the skills that I have developed. </p>
+            </div>
+        </section>
+
+        <div class="line" style="margin-top: 200px"></div>
+        <section id=portfolio>
+            <h2 align="center">Projects</h2>
+            <p>Feel free to check out a couple of projects I have been working on:</p>
+            <div id="myBtnContainer">
+                <button class="btnGallery active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btnGallery" onclick="filterSelection('apps')"> Apps</button>
+                <button class="btnGallery" onclick="filterSelection('C code')"> C</button>
+                <button class="btnGallery" onclick="filterSelection('java')"> Java</button>
+                <button class="btnGallery" onclick="filterSelection('python')"> Python</button>
+                <button class="btnGallery" onclick="filterSelection('web')"> Web</button>
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column web">
+                    <div class="content">
+                        <img src="assets/img/DSSproject.jpg" alt="Reynolds Digital Signage System" style="width:100%">
+                        <h5>Reynolds Digital Signage System</h5>
+                        <p>A proposed digital signage system for the Reynolds building at the University of Guelph</p>
+                        <a href="http://18.219.152.110/display/index.php?display=1" target="_parent"><button class="btnView">Visit</button></a>
+                        <a href="https://github.com/KevinPirabaharan/Reynolds-Digital-Signage-System" target="_parent"><button class="btnView">Code</button></a>
+                    </div>
+                </div>
+                <div class="column apps java">
+                    <div class="content">
+                        <img src="assets/img/Syncronicityproject.png" alt="Syncronicity" style="height:25%; width:75%">
+                        <h5>Syncronicity</h5>
+                        <p>A to-do list app that organizes tasks and events into lists, with multi-device data syncing.</p>
+                        <a href="https://github.com/KevinPirabaharan/Syncronicity" target="_parent"><button class="btnView">Code</button></a>
+                    </div>
+                </div>
+                <div class="column java">
+                    <div class="content">
+                        <img src="assets/img/Placeholder.jpg" alt="Car Sim" style="height:45%; width:100%">
+                        <h5>Car Simulator Game</h5>
+                        <p>A car simulator designed to emulate the environment of car, including navigation and HUD, in a java-based game.</p>
+                        <a href="https://github.com/KevinPirabaharan/Car-Simlulator" target="_parent"><button class="btnView">Code</button></a>
+                    </div>
+                </div>
+                <div class="column C code python">
+                    <div class="content">
+                        <img src="assets/img/ICALproject.jpg" alt="iCal Parser" style="width:100%">
+                        <h5>iCal Parser</h5>
+                        <p>An application designed to parse, edit, and export .ics files using Mysql, Python and C.</p>
+                        <a href="https://github.com/KevinPirabaharan/iCal-Parser" target="_parent"><button class="btnView">Code</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                filterSelection("all")
+
+                function filterSelection(c) {
+                    var x, i;
+                    x = document.getElementsByClassName("column");
+                    if (c == "all") c = "";
+                    for (i = 0; i < x.length; i++) {
+                        w3RemoveClass(x[i], "show");
+                        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                    }
+                }
+
+                function w3AddClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                        if (arr1.indexOf(arr2[i]) == -1) {
+                            element.className += " " + arr2[i];
+                        }
+                    }
+                }
+
+                function w3RemoveClass(element, name) {
+                    var i, arr1, arr2;
+                    arr1 = element.className.split(" ");
+                    arr2 = name.split(" ");
+                    for (i = 0; i < arr2.length; i++) {
+                        while (arr1.indexOf(arr2[i]) > -1) {
+                            arr1.splice(arr1.indexOf(arr2[i]), 1);
+                        }
+                    }
+                    element.className = arr1.join(" ");
+                }
+
+
+                // Add active class to the current button (highlight it)
+                var btnContainer = document.getElementById("myBtnContainer");
+                var btns = btnContainer.getElementsByClassName("btnGallery");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function() {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                    });
+                }
+            </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <div class="line"></div>
+        <!-- <section id="contactMe">
+            <h2 align = "center">Contact Me</h2>
+            <p>For any inquireies please feel free to contact me</p>
+        </section>
+
+        <div class="line"></div>
+
+    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+
+</body>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</html>
